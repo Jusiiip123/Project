@@ -1,421 +1,568 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>Juice n Sip</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- font css -->
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-   </head>
-   <body>
-      <div class="header_section">
-         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand"href="index.html"><img src="images/logo.png"></a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="coffees.html">Coffees</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="shop.html">Shop</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                     </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                     <div class="login_bt">
-                        <ul>
-                           <li><a href="#"><span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>Login</a></li>
-                           <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                        </ul>
-                     </div>
-                  </form>
-               </div>
-            </nav>
-         </div>
-         <!-- banner section start --> 
-         <div class="banner_section layout_padding">
-            <div class="container">
-               <div id="banner_slider" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <div class="banner_img"><img src="images/juicebg.png"></div>
-                           </div>
-                           <div class="col-md-6">
-                              <div class="banner_taital_main">
-                                 <h1 class="banner_taital">Juices</h1>
-                                 <h5 class="tasty_text">Tasty Of DozeCafe</h5>
-                                 <p class="banner_text">more-or-less normal distribution of letters, as opposed to using </p>
-                                 <div class="btn_main">
-                                    <div class="about_bt"><a href="#">About Us</a></div>
-                                    <div class="callnow_bt active"><a href="#">Call Now</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <div class="banner_img"><img src="images/shakesbg.png"></div>
-                           </div>
-                           <div class="col-md-6">
-                              <div class="banner_taital_main">
-                                 <h1 class="banner_taital">Shakes</h1>
-                                 <h5 class="tasty_text">Tasty Of DozeCafe</h5>
-                                 <p class="banner_text">more-or-less normal distribution of letters, as opposed to using </p>
-                                 <div class="btn_main">
-                                    <div class="about_bt"><a href="#">About Us</a></div>
-                                    <div class="callnow_bt active"><a href="#">Call Now</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
+
+  <title>
+    Juice n Sip
+  </title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/Copy_of_Juice__1_-removebg-preview.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  ">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="smoothies.html">
+                Smoothies
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="juices.html">
+                Juices
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">
+                Feedback
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+
+    <section class="slider_section">
+      <div class="slider_container">
+        
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="detail-box">
+                      <h1>
+                        Welcome To Our <br>
+                        Store
+                      </h1>
+                      <p>
+                        Welcome to Juice n Sip, where freshness meets flavor in every sip! We offer a wide variety of refreshing fruit juices and creamy shakes made from the finest, all-natural ingredients. Whether you're craving a tropical burst or a creamy blend, our menu has something to satisfy every taste and keep you coming back for more!                      </p>
+
+                    </div>
                   </div>
-                  <a class="carousel-control-prev" href="#banner_slider" role="button" data-slide="prev">
-                  <i class="fa fa-arrow-left"></i>
-                  </a>
-                  <a class="carousel-control-next" href="#banner_slider" role="button" data-slide="next">
-                  <i class="fa fa-arrow-right"></i>
-                  </a>
-               </div>
-            </div>
-         </div>
-         <!-- banner section end -->
+                  <div class="col-md-5 ">
+                    <div class="img-box">
+                      <img src="images/logo1-removebg-preview (1).png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+    </section>
+
+    <!-- end slider section -->
+  </div>
+  <!-- end hero area -->
+
+  <!-- shop section -->
+
+  <section class="shop_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Best Seller
+        </h2>
       </div>
-      <!-- header section end -->
-      <!-- coffee section start -->
-      <div class="coffee_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <h1 class="coffee_taital">OUR Shakes and Juices OFFER</h1>
-               <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
-            </div>
-         </div>
-         <div class="coffee_section_2">
-            <div id="main_slider" class="carousel slide" data-ride="carousel">
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="container-fluid">
-                        <div class="row">
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/pineapple-juice.jpg"></div>
-                              <h3 class="types_text">TYPES OF COFFEE</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/pineapple-shake.jpg"></div>
-                              <h3 class="types_text">BEAN VARIETIES</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/img-3.png"></div>
-                              <h3 class="types_text">COFFEE & PASTRY</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/img-4.png"></div>
-                              <h3 class="types_text">COFFEE TO GO</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="container-fluid">
-                        <div class="row">
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/grapes-shake.jpg"></div>
-                              <h3 class="types_text">TYPES OF COFFEE</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/grapes-juice1.jpg"></div>
-                              <h3 class="types_text">BEAN VARIETIES</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/strawberry-shake.jpg"></div>
-                              <h3 class="types_text">COFFEE & PASTRY</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/strawberry-juice.jpg"></div>
-                              <h3 class="types_text">COFFEE TO GO</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="container-fluid">
-                        <div class="row">
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/avocado-juice.jpg"></div>
-                              <h3 class="types_text">Avaco Juice</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/avocado-shake.jpg"></div>
-                              <h3 class="types_text">Avocado Shake</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/banana-juice.jpg"></div>
-                              <h3 class="types_text">COFFEE & PASTRY</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                           <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/banana-shake.jpg"></div>
-                              <h3 class="types_text">COFFEE TO GO</h3>
-                              <p class="looking_text">looking at its layout. The point of</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               
-               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-               <i class="fa fa-arrow-left"></i>
-               </a>
-               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-               <i class="fa fa-arrow-right"></i>
-               </a>
-            </div>
-         </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="smoothies.html">
+              <div class="img-box">
+                <img src="images/banana2.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Banana Smoothie
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    ₱90
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  Best
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="juices.html">
+              <div class="img-box">
+                <img src="images/watermleon1.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Watermelon Juice
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    ₱80
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  Best
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="smoothies.html">
+              <div class="img-box">
+                <img src="images/avocado-shake.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Avocado Smoothie
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    ₱100
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  Best
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="smoothies.html">
+              <div class="img-box">
+                <img src="images/papaya2.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Papaya Smoothie
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    ₱90
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  Best
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-      <!-- coffee section end -->
-      <!-- about section start -->
-      <div class="about_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="about_taital">About Our shop</h1>
-                  <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
-               </div>
+    
+    </div>
+  </section>
+
+  <!-- end shop section -->
+
+  <!-- saving section -->
+
+  <section class="saving_section ">
+    <div class="box">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="img-box">
+              <img src="images/poster1.png" alt="">
             </div>
-            <div class="about_section_2 layout_padding">
-               <div class="image_iman"><img src="images/about-img.png" class="about_img"></div>
-               <div class="about_taital_box">
-                  <h1 class="about_taital_1">Coffee distribution '</h1>
-                  <p class=" about_text">has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editorhas a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editor</p>
-                  <div class="readmore_btn"><a href="#">Read More</a></div>
-               </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                  Mission
+                </h2>
+              </div>
+              <p>
+                The mission of selling fruit juices revolves around promoting health and wellness by providing consumers with natural, refreshing beverages. This mission is about more than just selling a product; it’s about offering a convenient and delicious way for people to enjoy the benefits of fruits. One of the primary goals of selling fruit juices is to encourage a healthier lifestyle. Fruit juices are rich in vitamins, minerals, and antioxidants, which are essential for maintaining good health. <br> <br>
+               </p>
+               <div class="heading_container">
+                <h2>
+                  Vision
+                </h2>
+              </div>  
+              <p>The vision of selling fruit juices extends beyond just being a market leader; it aims to revolutionize how people perceive and consume beverages. This vision is to create a world where natural, health-enhancing fruit juices are the first choice for hydration and nourishment, replacing sugary, artificial drinks with something more beneficial for both people and the planet. To create a brand that is synonymous with health, quality, and sustainability, inspiring consumers to make better choices for themselves and the environment. The goal is to contribute to a healthier and one refreshing sip at a time.
+
+              </p>
+             
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-      <!-- about section end -->
-      <!-- client section start -->
-      <div class="client_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="about_taital">What syas customers</h1>
-                  <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
-               </div>
-            </div>
-            <div class="client_section_2">
-               <div class="client_taital_main">
-                  <div class="client_left">
-                     <div class="client_img"><img src="images/client-img1.png"></div>
-                  </div>
-                  <div class="client_right">
-                     <h3 class="moark_text">Joy Moark</h3>
-                     <p class="client_text">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text, </p>
-                  </div>
-               </div>
-               <div class="client_taital_main">
-                  <div class="client_left">
-                     <div class="client_img"><img src="images/client-img2.png"></div>
-                  </div>
-                  <div class="client_right">
-                     <h3 class="moark_text">Mihacal</h3>
-                     <p class="client_text">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text, </p>
-                  </div>
-               </div>
-               <div class="client_taital_main">
-                  <div class="client_left">
-                     <div class="client_img"><img src="images/client-img3.png"></div>
-                  </div>
-                  <div class="client_right">
-                     <h3 class="moark_text">Uliya den</h3>
-                     <p class="client_text">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text, </p>
-                  </div>
-               </div>
-            </div>
-         </div>
+    </div>
+  </section>
+
+  <!-- end saving section -->
+
+  <!-- juices section -->
+
+  <section class="juices_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Benefits of our Product
+        </h2>
       </div>
-      <!-- client section end -->
-      <!-- blog section start -->
-      <div class="blog_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="about_taital">Our Blog</h1>
-                  <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
-               </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box ">
+            <div class="img-box">
             </div>
-            <div class="blog_section_2">
-               <div class="row">
-                  <div class="col-md-6">
-                     <div class="blog_box">
-                        <div class="blog_img"><img src="images/blog-img1.png"></div>
-                        <h4 class="date_text">05 April</h4>
-                        <h4 class="prep_text">PREP TECHNIQUES Coffee</h4>
-                        <p class="lorem_text">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
-                     </div>
-                     <div class="read_bt"><a href="#">Read More</a></div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="blog_box">
-                        <div class="blog_img"><img src="images/blog-img2.png"></div>
-                        <h4 class="date_text">05 April</h4>
-                        <h4 class="prep_text">PREP TECHNIQUES Coffee</h4>
-                        <p class="lorem_text">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
-                     </div>
-                     <div class="read_bt"><a href="#">Read More</a></div>
-                  </div>
-               </div>
+            <div class="detail-box"> <br>
+              <h5>
+                Healthy and Safe
+              </h5>
+              <p>
+                Our juices and shakes are made with 100% natural, high-quality ingredients, free from artificial additives or preservatives, ensuring every sip is as pure and wholesome as nature intended. Each batch is rigorously tested for quality and safety, so you can trust that you're nourishing your body with a healthy, guilt-free treat.
+              </p>
             </div>
-         </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box ">
+            <div class="img-box">
+            </div>
+            <div class="detail-box"> <br>
+              <h5>
+                Fresh Fruits
+              </h5>
+              <p>
+                Our juices and shakes are made-to-order using only the freshest, locally sourced ingredients, ensuring peak flavor and nutrition in every bottle. We prioritize quick processing and delivery, so you enjoy a truly fresh product, as if it was just prepared for you today.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box ">
+            <div class="img-box">
+            </div>
+            <div class="detail-box"> <br>
+              <h5>
+                Best Quality
+              </h5>
+              <p>
+                
+We carefully select the finest, farm-fresh ingredients for our juices and shakes, ensuring superior taste and nutritional value in every serving. Our commitment to quality is reflected in every step, from sourcing to production, so you can enjoy a premium product with every sip.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- blog section end -->
-      <!-- contact section start -->
-      <div class="contact_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <h1 class="contact_taital">Get In Touch</h1>
-                  <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
-               </div>
+    </div>
+  </section>
+
+  <!-- end why section -->
+
+
+  <!-- gift section -->
+
+  <section class="gift_section layout_padding-bottom">
+    <div class="box ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="img_container">
+              <div class="img-box">
+                <img src="images/christmas2.png" alt="">
+              </div>
             </div>
-         </div>
-         <div class="container-fluid">
-            <div class="contact_section_2">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="mail_section_1">
-                        <input type="text" class="mail_text" placeholder="Your Name" name="Your Name">
-                        <input type="text" class="mail_text" placeholder="Your Email" name="Your Email">
-                        <input type="text" class="mail_text" placeholder="Your Phone" name="Your Phone">
-                        <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
-                        <div class="send_bt"><a href="#">SEND</a></div>
-                     </div>
-                  </div>
-               </div>
+          </div>
+          <div class="col-md-7">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                  Early Christmas <br>
+                  Offer
+                </h2>
+              </div>
+              <p>
+                Get into the holiday spirit with our early Christmas offer—buy 2 fruit juices and 2 shakes and enjoy a 30% discount! From November 16 to December 28, treat yourself and your loved ones to delicious, refreshing blends at a special holiday price. Whether you’re celebrating or just craving something tasty, our juices and shakes are the perfect way to spread the festive cheer. Don’t miss out—this limited-time offer is available for a short time only!
+              </p>
+              <div class="btn-box">
+                <a href="juices.html" class="btn1">
+                  Buy Juices
+                </a> 
+              </div>
+              <div class="btn-box">
+                <a href="smoothies.html" class="btn1">
+                  Buy Smoothies
+                </a>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-      <!-- contact section end -->
-      <!-- footer section start -->
-      <div class="footer_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="address_text">Address</h1>
-                  <p class="footer_text">here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use </p>
-                  <div class="location_text">
-                     <ul>
-                        <li>
-                           <a href="#">
-                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">+01 1234567890</span>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#">
-                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">demo@gmail.com</span>
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="form-group">
-                     <textarea class="update_mail" placeholder="Your Email" rows="5" id="comment" name="Your Email"></textarea>
-                     <div class="subscribe_bt"><a href="#"><img src="images/teligram-icon.png"></a></div>
-                  </div>
-               </div>
-            </div>
-         </div>
+    </div>
+  </section>
+
+
+  <!-- end gift section -->
+
+
+  <!-- contact section -->
+
+
+  <!-- client section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Feedback
+        </h2>
       </div>
-      <!-- footer section end -->
-      <!-- copyright section start -->
-      <div class="copyright_section">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-6 col-sm-12">
-                  <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a></p>
-               </div>
-               <div class="col-lg-6 col-sm-12">
-                  <div class="footer_social_icon">
-                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                     </ul>
-                  </div>
-               </div>
+    </div>
+    <div class="container px-0">
+      <div id="customCarousel2" class="carousel  carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    Jet
+                  </h5>
+                  <h6>
+                    Classmate
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+              <p>
+                10/10 kay lami ang inyo palamig.              
+              </p>
             </div>
-         </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    Kien
+                  </h5>
+                  <h6>
+                    Cute na Classmate
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+              <p>
+                Okay ra kay lasa man gihapon ug fruits nya lami kay libre raman pud ni Jet.              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    Ivan
+                  </h5>
+                  <h6>
+                    Classmate
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+              <p>
+                 Ice cream yummy, ice cream good
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    Richmen
+                  </h5>
+                  <h6>
+                    Classmate
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+              <p>
+                 Lami an sya pero ngano barato raman? (naka dawat sa ACCUP)
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    Jaymark
+                  </h5>
+                  <h6>
+                    Classmate
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+              <p>
+                 Sakto lang kay gamay raman pud ako gi iban kay sakit ako ngipon.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
-      <!-- copyright section end -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
+    </div>
+  </section>
+  <!-- end client section -->
+
+  <!-- info section -->
+
+  <section class="info_section  layout_padding2-top">
+    <div class="social_container">
+      <div class="social_box">
+        <a href="https://www.facebook.com/reyjoseph.daprosa.1">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        
+        <a href="https://www.instagram.com/jusiiip_/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.youtube.com/@reyjoseph234">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="info_container ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <h6>
+              ABOUT US
+            </h6>
+            <p>
+              At Juice n Sip, we’re passionate about bringing you the freshest and most delicious fruit juices and shakes, made with love and high-quality ingredients.
+            </p>
+          </div>
+          
+          <div class="col-md-6 col-lg-3">
+            <h6>
+              NEED HELP
+            </h6>
+            <p>
+              Have questions or need assistance with your order? Contact us and we'll be happy to help!
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6>
+              CONTACT US
+            </h6>
+            <div class="info_link-box">
+              <a href="https://www.google.com/maps/place/Naval,+Biliran/@11.576052,124.2123491,11z/data=!3m1!4b1!4m6!3m5!1s0x33a78cb8bc103253:0x6b62ae5056ee8e5d!8m2!3d11.5628579!4d124.3965285!16zL20vMDZteTdu?entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span> Naval, Biliran </span>
+              </a>
+              <a href="tel:+639265003294">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+639265003294</span>
+              </a>
+              <a href="mailto:reyjoseph234@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span> reyjoseph234.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <footer class=" footer_section">
+      <div class="container">
+        <p>
+          
+        </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+
+  </section>
+
+  <!-- end info section -->
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script src="js/custom.js"></script>
+
+</body>
+
 </html>
